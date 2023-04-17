@@ -1,0 +1,20 @@
+@font-face {
+	font-family: "AlQalam";
+	src: url('../fonts/AlQalam.ttf');
+}
+@font-face {
+	font-family: "Mehr";
+	src: url('../fonts/Mehr.ttf');
+}
+
+.urdu {
+	font-family: Mehr !important;
+	font-size: 18px !important;
+}
+
+.label-urdu {
+	font-family: 'Mehr';
+	font-size: 28px;
+	color: black;
+	word-spacing: 2px;
+}
