@@ -12,9 +12,16 @@
 	font-size: 18px !important;
 }
 
+body{
+	background-color:black;
+}
 .label-urdu {
 	font-family: 'Mehr';
 	font-size: 23px;
-	color: black;
+	color: #c7c6c6;
 	text-align: right;
+	width: 700px;
+	text-align: right;
+	position: absolute;
+	right: 20px;
 }
