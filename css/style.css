@@ -64,6 +64,7 @@ p{
 	color: #868D9A;
 	padding: 2px 4px;
 	border-radius: 2px;
+	margin: 0 5px;
 }
 
 .info-container{
@@ -77,6 +78,10 @@ p{
 
 }
 .icon {
-	color: skyblue;
-	
+	color: skyblue;	
 }
+.no-style{
+	background-color:transparent;
+}
+
+
