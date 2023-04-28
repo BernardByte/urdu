@@ -6,22 +6,77 @@
 	font-family: "Mehr";
 	src: url('../fonts/Mehr.ttf');
 }
+*{
+	box-sizing: border-box;
+}
+.urdu-label {
+	font-family: Mehr !important;
+	font-size: 23px !important;
+	margin-bottom: 5px;
+}
+body{
+	background-color: rgb(25, 25, 25);
+	color: white;
+	/* text-align: right; */
+}
+
+p{
+	text-align: right;
+}
 
 .urdu {
-	font-family: Mehr !important;
-	font-size: 18px !important;
-}
-
-body{
-	background-color:black;
-}
-.label-urdu {
 	font-family: 'Mehr';
-	font-size: 23px;
+	font-size: 20px;
 	color: #c7c6c6;
 	text-align: right;
-	width: 700px;
+	text-align: justify;
+	margin: 0;
+
+}
+
+.urdu-heading-h1, .urdu-heading-h2{
+	font-family: 'Mehr';
+	font-weight: 100;
+	font-size: 2.2em;
 	text-align: right;
-	position: absolute;
-	right: 20px;
+	background-color: rgb(34, 36, 69);
+	padding-right: 10px;
+	border-radius: 5px;
+	margin: 0;
+	
+}
+.urdu-heading-h2{
+	font-size: 1.8em;
+}
+.center-container{
+	max-width: 850px;
+	width: 780px;
+	margin: auto;
+	border-left: 1px solid rgb(71, 71, 71);
+	border-right: 1px solid rgb(71, 71, 71);
+	padding: 0px 10px;
+}
+.formated-code{
+	font-family: Consolas,Lucida Console,Menlo,Monaco,monospace;
+	font-size: 18px;
+	font-weight: bold;
+	background-color:#282a36;
+	color: #868D9A;
+	padding: 2px 4px;
+	border-radius: 2px;
+}
+
+.info-container{
+	border: 1px solid #868D9A;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.1);
+	margin: 10px 0;
+	padding: 20px;
+	border-radius: 3px;
+	text-align: right;
+
+}
+.icon {
+	color: skyblue;
+	
 }
