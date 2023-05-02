@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sidebar with Arrow</title>
+    <!-- Import Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+    <style>
+      /* Set height for the body and prevent scrolling */
+      body {
+        height: 100%;
+        overflow: hidden;
+      }
+      
+      /* Set height for the sidebar and position it fixed to the right */
+      #sidebar {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        background-color: #eee;
+        transition: right 0.3s;
+      }
+      
+      /* Move the arrow to the right side of the screen */
+      #sidebar-arrow {
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        transition: transform 0.3s;
+      }
+      
+      /* Rotate the arrow when the sidebar is open */
+      #sidebar.active + #sidebar-arrow {
+        transform: rotate(180deg) translateY(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Create a Bootstrap container with a row and two columns -->
+    <div class="container-fluid h-100">
+      <div class="row h-100">
+        <!-- Create a column for the sidebar -->
+        <div id="sidebar" class="col-auto">
+          <p>This is the sidebar content.</p>
+        </div>
+        <!-- Create a column for the main content -->
+        <div class="col">
+          <h1>Main Content</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus augue in sem convallis sodales. Cras id tellus eget ex mattis imperdiet non ac arcu. Nullam neque urna, lacinia in efficitur vitae, mattis ut massa. Donec euismod quam vel mi tincidunt eleifend. Aliquam erat volutpat. Fusce faucibus felis quis ex fringilla, eu lobortis lacus suscipit. Vestibulum rhoncus nisl nec odio molestie, ut rutrum enim tristique. Maecenas eget interdum metus, quis auctor est.</p>
+        </div>
+        <!-- Create an arrow element that toggles the sidebar -->
+        <div id="sidebar-arrow" class="col-auto">
+          <span class="bi bi-chevron-left"></span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Import Bootstrap JS and create a script to toggle the active class on the sidebar -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const sidebar = document.getElementById('sidebar');
+      const sidebarArrow = document.getElementById('sidebar-arrow');
+      
+      sidebarArrow.addEventListener('click', () => {
+        sidebar.classList.toggle('active');
+      });
+    </script>
+  </body>
+</html>
